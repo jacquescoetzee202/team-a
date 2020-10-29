@@ -55,4 +55,21 @@
     list-style-type: none
   }
 
+  .card-list{
+    display: grid;
+      grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
   
+  
+  @media screen and (max-width: 800px) {
+  
+  .card-list{
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 25% 25% 25% 25%;
+      padding: 0.5em;
+  }
+    
+  
+  }
