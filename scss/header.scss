@@ -14,7 +14,6 @@
         margin: 0;
         text-decoration: none;
         background-color: white;
-        align-content: center;
         flex-direction: row;
     }
 }
@@ -26,10 +25,12 @@
 
 .main-header__nav__burger {
     height: 2em;
+    align-self: center;
 }
 
 .main-header__nav__menu {
     size: 1em;
+    padding: 0 1em 0 1em;
     text-transform: uppercase;
     align-self: center;
 }
