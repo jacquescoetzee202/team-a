@@ -3,7 +3,8 @@
   justify-content: space-between; }
 
 .main-header__nav {
-  display: flex; }
+  display: flex;
+  color: pink; }
 
 .main-header button {
   display: flex;
