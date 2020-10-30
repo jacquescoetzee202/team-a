@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.min.css">
+    <script defer src="js/burger-dev.js"></script>
 </head>
 <body>
     <header class="main-header">
@@ -17,21 +18,35 @@
         </nav>
     </header>
 
-    <div id="burger-overlay" class="overlay">
+    <div id="burger-overlay" class="mobile-overlay">
         <h1 class="overlay__logo">arnolfini</h1>
-        <button id="overlay-close" class="overlay__button">
-            <span class="overlay__button__text" >close</span>
-            <img class="overlay__button_svg" src="assets/svg/burger.svg" alt="cross shaped close button">
+        <button id="burger-button" class="mobile-overlay__button">
+            <span class="mobile-overlay__button__text" >close</span>
+            <img class="mobile-overlay__button_svg" src="assets/svg/burger.svg" alt="cross shaped close button">
         </button>
-        <ul>
+        <ul class="mobile-overlay__nav-list">
             <li>
                 <a href="#">What's On</a>
+            </li>
+            <li>
                 <a href="#">Visit</a>
+            </li>
+            <li>
                 <a href="#">Support</a>
+           
+            </li>
+            <li>
                 <a href="#">News</a>
+            </li>
+            <li>
                 <a href="#">About</a>
+            </li>
+            <li>
                 <a href="#">Hire</a>
-                <a href="#">Bookshop</a>
+            </li>
+                <a href="#">Cafe</a>
+            </li>
+            </li>
                 <a href="#">Cafe</a>
             </li>
         </ul>
