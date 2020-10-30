@@ -72,6 +72,11 @@
     margin-left: 1rem;
     color: #4A4A4A;
   }
+
+  .cardAndAsideWrapper{
+    position: relative; 
+    min-height: 170vh;
+  }
   
   @media screen and (max-width: 1380px) {
 
