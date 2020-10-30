@@ -5,19 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.min.css">
+    <script defer src="js/burger-dev.js"></script>
 </head>
 <body>
     <header class="main-header">
         <h1 class="main-header__logo">Arnolfini</h1>
         <nav class="main-header__nav">
-            <button>
+            <button id="burger-button">
                 <span class="main-header__nav__menu" >Menu</span>
                 <img class="main-header__nav__burger" src="assets/svg/burger.svg" alt="burger icon to extend menu">
             </button>
         </nav>
     </header>
-
+    <div id="burger-overlay" class="mobile-overlay">
+        <h1 class="overlay__logo">arnolfini</h1>
+        <button id="close-button" class="mobile-overlay__button">
+            <span class="mobile-overlay__button__text" >close</span>
+            <img class="mobile-overlay__button_svg" src="assets/svg/burger.svg" alt="cross shaped close button">
+        </button>
+        <ul class="mobile-overlay__nav-list">
+            <li>
+                <a href="#">What's On</a>
+            </li>
+            <li>
+                <a href="#">Visit</a>
+            </li>
+            <li>
+                <a href="#">Support</a>
+           
+            </li>
+            <li>
+                <a href="#">News</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Hire</a>
+            </li>
+                <a href="#">Cafe</a>
+            </li>
+            </li>
+                <a href="#">Cafe</a>
+            </li>
+        </ul>
+    </div>
     <div class="wrapperCardAndFooter">
+
     <div class="cardAndAsideWrapper">
     <section class="card-list">
 
