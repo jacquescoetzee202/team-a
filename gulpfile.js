@@ -3,6 +3,14 @@ let cleanCSS = require('gulp-clean-css');
 let rename = require('gulp-rename');
 let sass = require('gulp-sass');
 let browserSync = require('browser-sync').create();
+let htmlmin = require('gulp-htmlmin');
+ 
+gulp.task('minify-html', () => {
+  return gulp.src('indexDev.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(rename('index.html'))
+    .pipe(gulp.dest('./'));
+});
 
 gulp.task('minify-css' , () => {
     return gulp.src('css/styles.css')
@@ -32,10 +40,8 @@ browserSync.init({
 done();
 }
   
+const watching = () => gulp.watch(['./scss/**/*.scss', './js/*.js', 'indexDev.html'], gulp.series('minify-sass', 'minify-html', reload));
 
-
-const watching = () => gulp.watch(['./scss/**/*.scss', './js/*.js', 'index.html'], gulp.series('sass', 'minify-css', reload));
-  
 gulp.task('default', gulp.series(serve, watching));
 
 gulp.task('minify-sass' , gulp.series('sass' ,'minify-css'));
