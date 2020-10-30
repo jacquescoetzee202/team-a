@@ -1,9 +1,16 @@
 $font-color: #1E1E1E;
 
-$font-base: 1em;
-$font-text: $font-base*0.75;
+//Menu text:
+$font-base: 1em; 
+// bold text in footer "Visit" "Connect" etc:
 $font-S: $font-base*0.6875;
+// standard text size:
+$font-text: $font-base*0.75;
+// card heading:
+$font-M: $font-base*0.875;
+//Carosel heading:
 $font-L: $font-base*1.125;
+// arnolfini logo on header and "Whats on" text:
 $font-XL: $font-base*2;
 
 
