@@ -50,10 +50,8 @@ h1 {
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-
   max-width: 31.25rem;
   max-width: 31.25rem; }
-
 
 .card img {
   width: 100%; }
@@ -98,10 +96,8 @@ h1 {
 
 .card-list {
   display: grid;
-
   max-width: 100%;
   grid-template-columns: 50% 50%;
-
   grid-template-rows: 33% 33% 33%;
   position: absolute; }
 
@@ -114,6 +110,13 @@ h1 {
   margin-left: 1rem;
   color: #4A4A4A; }
 
+.cardAndAsideWrapper {
+  position: relative;
+  min-height: 200vh; }
+
+.footerWrapper {
+  position: relative;
+  bottom: 0; }
 
 @media screen and (max-width: 1380px) {
   .card {
@@ -125,7 +128,6 @@ h1 {
   .card-list {
     display: grid;
     max-width: 100%;
-
     grid-template-columns: 100%;
     grid-template-rows: 20% 20% 20% 20% 20%;
     padding: 0.5em;
