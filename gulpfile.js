@@ -4,6 +4,14 @@ let rename = require('gulp-rename');
 let sass = require('gulp-sass');
 let browserSync = require('browser-sync').create();
 let htmlmin = require('gulp-htmlmin');
+let uglify = require('gulp-uglify-es').default;
+
+gulp.task('minify-js' , () => {
+    return gulp.src('js/burger-dev.js')
+    .pipe(uglify())
+    .pipe(rename('app.min.js'))
+    .pipe(gulp.dest('./js/'));
+});
  
 gulp.task('minify-html', () => {
   return gulp.src('indexDev.html')
@@ -40,7 +48,7 @@ browserSync.init({
 done();
 }
   
-const watching = () => gulp.watch(['./scss/**/*.scss', './js/*.js', 'indexDev.html'], gulp.series('minify-sass', 'minify-html', reload));
+const watching = () => gulp.watch(['./scss/**/*.scss', './js/*.js', 'indexDev.html'], gulp.series('minify-sass', 'minify-html', 'minify-js', reload));
 
 gulp.task('default', gulp.series(serve, watching));
 

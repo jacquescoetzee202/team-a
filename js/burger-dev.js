@@ -1,5 +1,4 @@
 ((d) => {
-// burger menu to open mobile overlay
     const burgerMenu = d.getElementById('burger-button');
 
     const overlay = d.getElementById('burger-overlay');
@@ -8,7 +7,6 @@
         this.classList.toggle("open");
         overlay.classList.toggle("overlay");
     });
-// button to close mobile overlay
     const closeButton = d.getElementById('close-button');
 
     closeButton.addEventListener('click' , function(){
