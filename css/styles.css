@@ -143,11 +143,12 @@ h1 {
 .mobile-overlay {
   position: absolute;
   right: 100%;
-  background-color: pink; }
+  background-color: white; }
 
 .overlay {
   position: fixed;
   top: 0%;
   right: 0%;
   z-index: 2;
-  width: 100%; }
+  min-width: 100%;
+  min-height: 100vh; }
