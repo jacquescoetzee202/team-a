@@ -139,3 +139,15 @@ h1 {
     flex-direction: column;
     margin-left: 1rem;
     color: #4A4A4A; } }
+
+.mobile-overlay {
+  position: absolute;
+  right: 100%;
+  background-color: pink; }
+
+.overlay {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  z-index: 2;
+  width: 100%; }
