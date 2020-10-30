@@ -73,16 +73,12 @@
     color: #4A4A4A;
   }
 
-  .cardAndAsideWrapper{
-    position: relative; 
-    min-height: 200vh;
+  .wrapperCardAndFooter {
+    display: flex;
+    flex-direction: column;
+
   }
 
-  .footerWrapper{
-    position: relative; 
-    bottom: 0;
-  }
-  
 
   @media screen and (max-width: 1380px) {
 

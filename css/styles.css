@@ -110,13 +110,9 @@ h1 {
   margin-left: 1rem;
   color: #4A4A4A; }
 
-.cardAndAsideWrapper {
-  position: relative;
-  min-height: 200vh; }
-
-.footerWrapper {
-  position: relative;
-  bottom: 0; }
+.wrapperCardAndFooter {
+  display: flex;
+  flex-direction: column; }
 
 @media screen and (max-width: 1380px) {
   .card {
@@ -140,15 +136,4 @@ h1 {
     margin-left: 1rem;
     color: #4A4A4A; } }
 
-.mobile-overlay {
-  position: absolute;
-  right: 100%;
-  background-color: white; }
 
-.overlay {
-  position: fixed;
-  top: 0%;
-  right: 0%;
-  z-index: 2;
-  min-width: 100%;
-  min-height: 100vh; }
